@@ -1,27 +1,25 @@
-# lab06
-Number and name of feature: data formating 
+# lab08
+Number and name of feature: DB
+Estimate of time needed to complete: 1 h
 
-Estimate of time needed to complete: 3 hour 
+Start time: 6
 
-Start time: 4
+Finish time: 7
 
-Finish time: 8
+Actual time needed to complete: 1
 
-Actual time needed to complete: 4 
-
-
-
-Number and name of feature: location
+-------------------------
+Number and name of feature: server
 
 Estimate of time needed to complete: 1 hour 
 
-Start time: 9
+Start time: 7
 
-Finish time: 10
+Finish time: 8
 
 Actual time needed to complete: 1 
-
-Number and name of feature: weather 
+*********************
+Number and name of feature: Deploy  
 
 Estimate of time needed to complete:1  hour 
 
@@ -32,23 +30,13 @@ Finish time: 5
 Actual time needed to complete: 1 
 
 
-Number and name of feature: parks
-
-Estimate of time needed to complete: 1  hour 
-
-Start time: 5
-
-Finish time: 5.3
-
-Actual time needed to complete: 30min
-
 
 
 **Author**: Omar-zoubi
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-building an API server, which will provide data for the City Explorer Application, allowing a user to search for a location, present a Map, as well as interesting information about the area, all using data from APIs that your server will fetch and manage.
+building a server, which will provide data for the City Explorer Application, that git the data from the data base, if not exist get from api and then save it to database,
 ## Getting Started
 worked on API && node.js
 ## Architecture
@@ -57,4 +45,5 @@ node.js
 .env 
 cors 
 npm 
+PG
 superagent 
