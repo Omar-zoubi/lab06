@@ -7,6 +7,9 @@ const cors = require('cors');
 const pg = require('pg');
 const app = express();
 app.use(cors());
+process.on('uncaughtException', function (err) {
+    console.log(err);
+}); 
 
 const GEOCODE_API_KEY = process.env.GEOCODE_API_KEY;
 const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
@@ -16,6 +19,7 @@ const DATABASE_URL = process.env.DATABASE_URL;
 app.get('/location', hanLoc);
 app.get('/weather', hanWeath);
 app.get('/parks', hanParks);
+
 
 const client = new pg.Client(DATABASE_URL);
 
@@ -101,4 +105,4 @@ function hanParks(request, response) {
 client.connect().then(() => {
 
     app.listen(PORT, () => console.log(`app is runing on server on port: ${PORT}`));
-});
+}).catch(item => console.log(item))
